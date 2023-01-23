@@ -1,0 +1,9 @@
+[out:csv("wikidata","name.cy","name"; true; ",")] [timeout:200];
+ area(3600058437) -> .area_0;
+(
+    node["wikidata"](area.area_0);
+    way["wikidata"](area.area_0);
+    relation["wikidata"](area.area_0);
+);
+(._;>;);
+out body;
