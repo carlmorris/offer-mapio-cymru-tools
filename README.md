@@ -1,4 +1,12 @@
-# Teclynnau gweinydd Mapio Cymru
+<img
+  src="https://openstreetmap.cymru/mapio-cymru-map-cymru.jpg"
+  alt="Mapio Cymru"
+  title="Mapio Cymru">
+
+[Cymraeg](#teclynnau-gweinydd-mapio-cymru) | [English](#mapio-cymru-server-tools)
+
+Teclynnau gweinydd Mapio Cymru
+==============================
 
 Mae'r teclynnau llinell orchymyn hyn yn eich helpu i ddarparu mapiau Cymraeg eich hunain sy'n deillio o OpenStreetMap. Fel arall gallech eu haddasu i gael mapiau yn yr iaith o eich dewis.
 
@@ -6,7 +14,7 @@ Edrychwch ar [weinydd Mapio Cymru](https://openstreetmap.cymru), map Cymraeg sy'
 
 Nodwch nad yw'r adnodd hwn yn gynnyrch llawn. Rydym yn canolbwyntio bron yn gyfan gwbl ar ein gwaith data a mapio ein hunain, ac dw i'n dosbarthu'r gwaith mewn ysbryd rhannu.
 
-## Cefndir
+# Cefndir
 Fel Mapio Cymru roeddem am ddarparu map yn gyfan gwbl yn y Gymraeg, ond nid oedd yn amlwg sut i wneud hyn. Ar ôl llawer o [ym]chwilio ysgrifennais y teclynnau hyn i'w defnyddio ar y cyd ag OpenStreetMap/Switch2OSM. O ran y Gymraeg maen nhw'n gweithio gobeithiwn eu bod yn ddefnyddiol ar gyfer ieithoedd eraill.
 
 Mae OpenStreetMap yn cynnwys llawer o ddata agored amlieithog. Mae enwau'n cael eu tagio yn y ffurf `name:cod=*`.
@@ -21,11 +29,12 @@ Er enghraifft, ewch i [Gymru ar osm.org](https://www.openstreetmap.org/relation/
 * `name:ga=An Bhreatain Bheag`
 * `name:gd=A' Chuimrigh`
 * `name:kw=Kembra`
+
 ac yn y blaen.
 
 Mae fy null i yn newid y tag `name` yn ystod y broses mewnforio data a ddilynir gan osm2pgsql. Mae dulliau posib eraill o gael map mewn iaith benodol.
 
-### Sgript cartonamecy2name.lua
+## Sgript cartonamecy2name.lua
 Y prif declyn yn yr ystorfa yw'r sgript `cartonamecy2name.lua`. Gelwir y sgript Lua hon gan osm2pgsql yn ystod y broses fewnforio. Mae'n gosod yr enw yn ôl y drefn flaenoriaeth ganlynol:
 
 * `name:cy`, os yw e ar gael
@@ -37,7 +46,7 @@ Fel Mapio Cymru roeddem eisiau fylchau yn y data Cymraeg fod yn amlwg i bobl sy'
 
 Fforc o'r sgript `openstreetmap-carto.lua` a ddarperir gyda'r thema Carto yw `cartonamecy2name.lua`.
 
-### Teclynnau Wikidata
+## Teclynnau Wikidata
 
 Mae'r rhan fwyaf o'r teclynnau eraill ar gyfer cael enwau llefydd o Wikidata. Gwneir hyn trwy'r cod QID a roddir gan y tag `wikidata` yn OpenStreetMap. Mae cyfuno Wikidata ag OSM yn debygol o lenwi eich map gyda mwy o enwau yn eich iaith. Mae hyn yn ddefnyddiol yn enwedig os ydych yn gweithio mewn iaith â llai o adnoddau.
 
@@ -52,11 +61,16 @@ Mae `creuenwauqidlua.sh` yn dibynnu ar y canlynol:
 
 Yn ogystal â hyn mae `allbwnQID.lua` yn allbwn enghreifftiol.
 
-### Rendro
+## Rendro
 
-`rendrocymrunewydd.sh` yw'r sgript mae Mapio Cymru yn ei ddefnyddio ar gyfer rhag-rendro. Byddai'n cymryd gormod o amser i rag-rendro Cymru gyfan felly yn lle hynny rydym yn rendro'r ardaloedd o'r map sy'n cael y nifer fwyaf o ymweliadau. Mae’r rhain yn seiliedig ar gofnodion ymwelwyr i [openstreetmap.cymru](https://openstreetmap.cymru). Mae'r sgript yn defnyddio `render_list_geo.pl` (sydd yn ei dro yn galw `render_list`) gyda rhai gwerthoedd hydred, lledred a chwyddo wedi'u pobi i mewn.
+`rendrocymrunewydd.sh` yw'r sgript mae Mapio Cymru yn ei ddefnyddio ar gyfer rhag-rendro. Byddai'n cymryd gormod o amser i rag-rendro Cymru gyfan felly yn lle hynny rydym yn rendro'r ardaloedd o'r map sy'n cael y nifer fwyaf o ymweliadau. Mae’r rhain yn seiliedig ar gofnodion ymwelwyr i [openstreetmap.cymru](https://openstreetmap.cymru). Mae'r sgript yn defnyddio [`render_list_geo.pl`](https://github.com/alx77/render_list_geo.pl) (sydd yn ei dro yn galw `render_list`) gyda rhai gwerthoedd hydred, lledred a chwyddo wedi'u pobi i mewn.
 
-## Rhagofynion a rhybuddion
+<img
+  src="https://openstreetmap.cymru/mapio-cymru-map-abertawe.jpg"
+  alt="Mapio Cymru: Abertawe"
+  title="Mapio Cymru: Abertawe">
+
+# Rhagofynion a rhybuddion
 Mae'r teclynnau hyn yn gweithio ar y cyd â stac meddalwedd Switch2OSM (gweinydd Linux sy'n rhedeg PostgresQL a PostGIS, Mapnik, renderd, Apache a mod_tile). Maen nhw wedi cael eu profi ar weinyddion sy'n rhedeg y stac hwn ar Ubuntu 20.04.5 LTS.
 
 Cyn gwneud unrhyw beth arall bydd angen i chi greu gweinydd mapio. Os ydych chi eisiau darparu un, dw i'n argymell yn gryf eich bod yn dilyn y cyfarwyddiadau defnyddiol ar [Switch2OSM](https://switch2osm.org/). Mae angen gwybodaeth sylfaenol o sut i ddefnyddio Linux trwy'r llinell orchymyn.
@@ -67,7 +81,7 @@ Ysgrifennwyd yr offer hyn yn benodol ar gyfer Cymraeg. Nid ydyn nhw wedi cael eu
 
 Mae angen rhedeg PHP i ddefnyddio `sparqlhorse2.php` sy'n cymryd enwau o Wikidata.
 
-## Cyfarwyddiadau cam wrth gam
+# Cyfarwyddiadau cam wrth gam
 
 1. Dilynwch Switch2OSM i ddarparu gweinydd mapio.
 
@@ -81,11 +95,11 @@ Mae angen rhedeg PHP i ddefnyddio `sparqlhorse2.php` sy'n cymryd enwau o Wikidat
 
 1. Mewnforiwch trwy ddefnyddio: `osm2pgsql -v --slim -d gis -C 8000 --hstore --tag-transform-script /home/cartonamecy2name.lua -S ~/src/openstreetmap-carto/openstreetmap-carto.style --number-processes 2 /home/wales-latest.osm.pbf`
 
-Yma fe allech chi wneud rhywfaint o rag-rendro gan ddefnyddio `render_list_geo.pl` efallai. Gweler `rendrocymrunewydd.sh` am enghraifft.
+Yma fe allech chi wneud rhywfaint o rag-rendro gan ddefnyddio [`render_list_geo.pl`](https://github.com/alx77/render_list_geo.pl) efallai. Gweler `rendrocymrunewydd.sh` am enghraifft.
 
 Fe allech chi ailadrodd 3 i 6 bob tro rydych chi am ddiweddaru'r map o'r data OSM diweddaraf. Gosodwch eitem cron i awtomeiddio hyn. (Mae Geofabrik yn cael ei ddiweddaru unwaith bob dydd.) Neu fe allech chi ymchwilio i ddiweddariadau awtomatig amlach trwy OSM.
 
-## Gwelliannau posib
+# Gwelliannau posib
 Dyma rai gwelliannau posibl y gellid eu gwneud i'r offer hyn.
 
 * Canllaw i newidiadau y byddech chi'n eu gwneud i gael gweinydd ar gyfer iaith wahanol
@@ -94,15 +108,25 @@ Dyma rai gwelliannau posibl y gellid eu gwneud i'r offer hyn.
 * Symleiddio'r broses Wikidata.
 * Golygu OSM i ychwanegu'r holl ddata enwau lleoedd sydd yn Wikidata, felly fydd ddim angen y rhan Wikidata o'r broses. :-)
 
-## Trwyddedu
+# Trwyddedu
 Meddalwedd rydd yw'r pecyn hwn; gallwch ei ailddosbarthu a/neu ei addasu o dan delerau Trwydded Gyhoeddus Gyffredinol GNU fel y'i cyhoeddwyd gan y Free Software Foundation; naill ai fersiwn 2 o'r Drwydded, neu (yn ôl eich dewis) unrhyw fersiwn diweddarach.
 
 Dosberthir y rhaglen hon yn y gobaith y bydd yn ddefnyddiol, ond HEB UNRHYW WARANT; heb hyd yn oed y warant oblygedig o DIBYNADWYEDD neu FFITRWYDD AT DDIBEN PENODOL. Gweler Trwydded Gyhoeddus Gyffredinol GNU am ragor o fanylion.
 
-## Diolch
-Diolch i bawb sy'n cyfrannu at y prosiect OpenStreetMap byd-eang a phrosiectau cysylltiedig, gan gynnwys golygyddion data a chrewyr a chynhalwyr meddalwedd.
+# Diolch
+Diolch i bawb sy'n cyfrannu at y prosiect OpenStreetMap byd-eang a phrosiectau cysylltiedig, gan gynnwys golygyddion data a chrewyr a chynhalwyr meddalwedd. Diolch yn fawr i Lywodraeth Cymru a [Data Orchard](dataorchard.org.uk).
 
-# Mapio Cymru server tools
+----------------------------------
+
+<img
+  src="https://openstreetmap.cymru/mapio-cymru-map-cymru.jpg"
+  alt="Mapio Cymru"
+  title="Mapio Cymru">
+
+[Cymraeg](#teclynnau-gweinydd-mapio-cymru) | [English](#mapio-cymru-server-tools)
+
+Mapio Cymru server tools
+========================
 
 These command line tools help you to serve your own OpenStreetMap-derived base maps in Welsh. Alternatively you could modify them to have maps in the language of your choice.
 
@@ -110,7 +134,7 @@ Have a look at the [Mapio Cymru server](https://openstreetmap.cymru), a map in C
 
 Please note that this repo is not a fully-realised product. We are almost entirely focused on our own mapping and data work, and I am distributing the work in the spirit of sharing.
 
-## Background
+# Background
 
 At the Mapio Cymru project we wanted to provide a map entirely in Cymraeg, but it wasn't immediately obvious how to do this. After much [re]searching I wrote these tools to be used in conjunction with OpenStreetMap/Switch2OSM. They work for Cymraeg and we hope they are useful for other languages.
 
@@ -132,7 +156,7 @@ and so on.
 
 My method modifies the `name` tag during the data import process performed by osm2pgsql. There are other possible methods of having a map in one language.
 
-### cartonamecy2name.lua script
+## cartonamecy2name.lua script
 
 The `cartonamecy2name.lua` script in this repository is the main tool. This Lua script is called by osm2pgsql during the import process. It sets the name according to the following order of precedence:
 
@@ -145,7 +169,7 @@ At Mapio Cymru we wanted gaps in the Cymraeg-language data to be obvious for peo
 
 `cartonamecy2name.lua` is a fork of the script `openstreetmap-carto.lua` provided with the [Carto theme](https://github.com/gravitystorm/openstreetmap-carto/tree/master/scripts/lua).
 
-### Wikidata tools
+## Wikidata tools
 
 Most of the remaining tools are for getting place names from Wikidata. This is done via the QID code which is given by the `wikidata` tag in OpenStreetMap. Combining Wikidata with OSM is likely to populate your map with more names in your language. This is helpful particularly if you are working in a lesser-resourced language.
 
@@ -160,11 +184,16 @@ The main tool for Wikidata is `creuenwauqidlua.sh` which creates a file containi
 
 Additionally `enwauQID.lua` is example output.
 
-### Rendering
+## Rendering
 
-`rendrocymrunewydd.sh` is the script Mapio Cymru uses for pre-rendering. It would take too much time to pre-render all of Wales so instead we render the most frequently-accessed areas of the country. These are based on visitor logs for [openstreetmap.cymru](https://openstreetmap.cymru). The script uses `render_list_geo.pl` (which in turn calls `render_list`) with some hard-coded lat, long, and zoom values.
+`rendrocymrunewydd.sh` is the script Mapio Cymru uses for pre-rendering. It would take too much time to pre-render all of Wales so instead we render the most frequently-accessed areas of the country. These are based on visitor logs for [openstreetmap.cymru](https://openstreetmap.cymru). The script uses [`render_list_geo.pl`](https://github.com/alx77/render_list_geo.pl) (which in turn calls `render_list`) with some hard-coded lat, long, and zoom values.
 
-## Prerequisites and caveats
+<img
+  src="https://openstreetmap.cymru/mapio-cymru-map-abertawe.jpg"
+  alt="Mapio Cymru: Abertawe"
+  title="Mapio Cymru: Abertawe">
+
+# Prerequisites and caveats
 
 These tools work in conjunction with the Switch2OSM software stack (a Linux server running PostgresQL and PostGIS, Mapnik, renderd, Apache and mod_tile). They have been tested on servers running this stack on Ubuntu 20.04.5 LTS.
 
@@ -176,7 +205,7 @@ These tools were written specifically for Cymraeg. At the time of writing they h
 
 You need to run PHP to use `sparqlhorse2.php` which retrieves names from Wikidata.
 
-## Step-by-step instructions
+# Step-by-step instructions
 
 1. Follow [Switch2OSM](https://switch2osm.org) to provision a mapping server. 
 
@@ -190,10 +219,10 @@ You need to run PHP to use `sparqlhorse2.php` which retrieves names from Wikidat
 1. Get the Wikidata place name data for Wales (takes about 30 minutes): `./creuenwauqidlua.sh`
 
 1. Import using: `osm2pgsql -v --slim -d gis -C 8000 --hstore --tag-transform-script /home/cartonamecy2name.lua -S ~/src/openstreetmap-carto/openstreetmap-carto.style --number-processes 2 /home/wales-latest.osm.pbf`
-1. Here you could do some pre-rendering using `render_list_geo.pl` perhaps. See `rendrocymrunewydd.sh` for an example.
+1. Here you could do some pre-rendering using [`render_list_geo.pl`](https://github.com/alx77/render_list_geo.pl) perhaps. See `rendrocymrunewydd.sh` for an example.
 1. You could repeat 3 to 6 every time you want to update the map from the latest OSM data. Set up a cron job to automate this. (Geofabrik is updated once daily.) Alternatively you could investigate more regular automatic updates from OSM.
 
-## Possible improvements
+# Possible improvements
 
 Here are some possible theoretical improvements that could be made to these tools.
 
@@ -203,12 +232,12 @@ Here are some possible theoretical improvements that could be made to these tool
 * Streamline the Wikidata process.
 * Edit OSM to add all the viable place name data that's in Wikidata, removing the need for this part of the process. :-)
 
-## Licensing
+# Licensing
 
 This package is free software; you can redistribute it and/or modify it under the terms of the GNU General Public Licence as published by the Free Software Foundation; either version 2 of the Licence, or (at your option) any later version.
 
 This package is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public Licence for more details.
 
-## Diolch/thanks
+# Diolch/thanks
 
-Thanks to everybody who contributes to the worldwide OpenStreetMap project and related projects, including data editors and software creators and maintainers.
+Thanks to everybody who contributes to the worldwide OpenStreetMap project and related projects, including data editors and software creators and maintainers. Diolch yn fawr i Lywodraeth Cymru. Thanks very much to [Data Orchard](dataorchard.org.uk).
