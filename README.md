@@ -87,7 +87,7 @@ Mae angen rhedeg PHP i ddefnyddio `sparqlhorse2.php` sy'n cymryd enwau o Wikidat
 
 1. Crëwch ffeil `index.html` sy'n defnyddio [`Leaflet.js`](https://leafletjs.com/examples/quick-start/).
 
-1. git clône yr ystorfa hwn
+1. git clone yr ystorfa hwn
 
 1. Lawrlwythwch ffeil Cymru o Geofabrik: `wget http://download.geofabrik.de/europe/great-britain/wales-latest.osm.pbf --directory-prefix=/home/`
 
@@ -103,7 +103,7 @@ Fe allech chi ailadrodd 3 i 6 bob tro rydych chi am ddiweddaru'r map o'r data OS
 Dyma rai gwelliannau posibl y gellid eu gwneud i'r offer hyn.
 
 * Canllaw i newidiadau y byddech chi'n eu gwneud i gael gweinydd ar gyfer iaith wahanol
-* Cefnogi ffeiliau config, e.e. gosod dewis iaith, troi defnydd o Wikidata ymlaen/i ffwrdd, ac ati.
+* Cefnogi ffeiliau _config_, e.e. gosod dewis iaith, troi defnydd o Wikidata ymlaen/i ffwrdd, ac ati.
 * Diweddariadau rheolaidd. Mae'r broses fewnforio yn gwneud popeth o'r newydd o lawrlwytho Geofabrik ymlaen, felly rydyn ni'n mewnforio dim ond unwaith bod dydd.
 * Symleiddio'r broses Wikidata.
 * Golygu OSM i ychwanegu'r holl ddata enwau lleoedd sydd yn Wikidata, felly fydd ddim angen y rhan Wikidata o'r broses. :-)
