@@ -114,7 +114,7 @@ Meddalwedd rydd yw'r pecyn hwn; gallwch ei ailddosbarthu a/neu ei addasu o dan d
 Dosberthir y rhaglen hon yn y gobaith y bydd yn ddefnyddiol, ond HEB UNRHYW WARANT; heb hyd yn oed y warant oblygedig o DIBYNADWYEDD neu FFITRWYDD AT DDIBEN PENODOL. Gweler Trwydded Gyhoeddus Gyffredinol GNU am ragor o fanylion.
 
 # Diolch
-Diolch i bawb sy'n cyfrannu at y prosiect OpenStreetMap byd-eang a phrosiectau cysylltiedig, gan gynnwys golygyddion data a chrewyr a chynhalwyr meddalwedd. Diolch yn fawr i Lywodraeth Cymru a [Data Orchard](http://dataorchard.org.uk).
+Diolch i bawb sy'n cyfrannu at y prosiect OpenStreetMap byd-eang a phrosiectau cysylltiedig, gan gynnwys golygyddion data a chrewyr a chynhalwyr meddalwedd. Diolch i Wyn Williams a Ben Proctor fy nghyd-aelodau o dîm [Mapio Cymru](http://mapio.cymru/cy/). Diolch yn fawr i Lywodraeth Cymru a [Data Orchard](http://dataorchard.org.uk).
 
 ----------------------------------
 
@@ -240,4 +240,4 @@ This package is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 # Diolch/thanks
 
-Thanks to everybody who contributes to the worldwide OpenStreetMap project and related projects, including data editors and software creators and maintainers. Diolch yn fawr i Lywodraeth Cymru. Thanks very much to [Data Orchard](http://dataorchard.org.uk).
+Thanks to everybody who contributes to the worldwide OpenStreetMap project and related projects, including data editors and software creators and maintainers. Diolch yn fawr i Lywodraeth Cymru. Diolch i Wyn Williams a Ben Proctor - my fellow members of the [Mapio Cymru](http://mapio.cymru/en/) team. Thanks very much to [Data Orchard](http://dataorchard.org.uk).
