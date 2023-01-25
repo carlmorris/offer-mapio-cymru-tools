@@ -37,7 +37,7 @@ Mae fy null i yn newid y tag `name` yn ystod y broses mewnforio data a ddilynir 
 ## Sgript cartonamecy2name.lua
 Y prif declyn yn yr ystorfa yw'r sgript `cartonamecy2name.lua`. Gelwir y sgript Lua hon gan osm2pgsql yn ystod y broses fewnforio. Mae'n gosod yr enw yn ôl y drefn flaenoriaeth ganlynol:
 
-* `name:cy`, os yw e ar gael
+* `name:cy`, os ar gael
 * Wikidata, os oes tag `wikidata` ar gael a bod enw ar gael yna yn Gymraeg
 * `name` os yw e'n bodloni'r meini prawf
 * gwag
@@ -57,7 +57,7 @@ Mae `creuenwauqidlua.sh` yn dibynnu ar y canlynol:
 * `popeth-cymru-gyda-qid.xml` ymholiad Overpass sy'n cael yr holl nodau, ffyrdd, a chysylltiadau OSM yng Nghymru sydd â thagiau wikidata (codau QID)
 * `creurhestr.py` sgript Python byr i redeg yr ymholiad Overpass a chreu CSV o'r allbwn
 * `qidcreu.sh` dull cyflym o alw `creurhestr.py` gyda `popeth-cymru-gyda-qid.xml`
-* `sparqlhorse2.php` Sgript PHP i gymryd enw lle yn Gymraeg o Wikidata ar gyfer pob un QID yng Nghymru, ac allbynnu ffeil Lua. Ar ein gweinydd mae hyn yn cymryd tua 30 munud i'w gwblhau. Rhowch wybod i ni os ydych yn gwybod am ddull well.
+* `sparqlhorse2.php` Sgript PHP i gymryd enw lle yn Gymraeg o Wikidata ar gyfer pob un QID yng Nghymru, ac allbynnu ffeil Lua. Ar ein gweinydd mae hyn yn cymryd tua 30 munud i'w gwblhau. Pe baech yn gwybod am ddull gwell, dewch i gyswllt os gwelwch yn dda.
 
 Yn ogystal â hyn mae `allbwnQID.lua` yn allbwn enghreifftiol.
 
@@ -77,7 +77,7 @@ Cyn gwneud unrhyw beth arall bydd angen i chi greu gweinydd mapio. Os ydych chi 
 
 Dw i'n argymell y thema Carto. Os ydych chi eisiau defnyddio thema wahanol, mae canllawiau defnyddiol ar-lein. Efallai bydd rhaid i chi addasu'r sgript `cartonamecy2name.lua` hefyd.
 
-Ysgrifennwyd yr offer hyn yn benodol ar gyfer Cymraeg. Nid ydyn nhw wedi cael eu profi gyda ieithoedd eraill, ond dylen nhw weithio gyda rhai gwelliannau.
+Ysgrifennwyd yr offer hyn yn benodol ar gyfer Cymraeg. Nid ydyn nhw wedi cael eu profi gydag ieithoedd eraill, ond dylen nhw weithio gyda rhai gwelliannau.
 
 Mae angen rhedeg PHP i ddefnyddio `sparqlhorse2.php` sy'n cymryd enwau o Wikidata.
 
@@ -111,7 +111,7 @@ Dyma rai gwelliannau posibl y gellid eu gwneud i'r offer hyn.
 # Trwyddedu
 Meddalwedd rydd yw'r pecyn hwn; gallwch ei ailddosbarthu a/neu ei addasu o dan delerau Trwydded Gyhoeddus Gyffredinol GNU fel y'i cyhoeddwyd gan y Free Software Foundation; naill ai fersiwn 2 o'r Drwydded, neu (yn ôl eich dewis) unrhyw fersiwn diweddarach.
 
-Dosberthir y rhaglen hon yn y gobaith y bydd yn ddefnyddiol, ond HEB UNRHYW WARANT; heb hyd yn oed y warant oblygedig o DIBYNADWYEDD neu FFITRWYDD AT DDIBEN PENODOL. Gweler Trwydded Gyhoeddus Gyffredinol GNU am ragor o fanylion.
+Dosberthir y rhaglen hon yn y gobaith y bydd yn ddefnyddiol, ond HEB UNRHYW WARANT; heb hyd yn oed y warant oblygedig o DDIBYNADWYEDD neu FFITRWYDD AT DDIBEN PENODOL. Gweler Trwydded Gyhoeddus Gyffredinol GNU am ragor o fanylion.
 
 # Diolch
 Diolch i bawb sy'n cyfrannu at y prosiect OpenStreetMap byd-eang a phrosiectau cysylltiedig, gan gynnwys golygyddion data a chrewyr a chynhalwyr meddalwedd. Diolch i Wyn Williams a Ben Proctor fy nghyd-aelodau o dîm [Mapio Cymru](http://mapio.cymru/cy/). Diolch yn fawr i Lywodraeth Cymru a [Data Orchard](http://dataorchard.org.uk).
